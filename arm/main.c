@@ -91,8 +91,8 @@ u32 _main(void* base)
 	ELM_Unmount();
 	sdcard_exit();
 
-	printf("Waiting power button input...\n");
-	smc_wait_events(SMC_POWER_BUTTON);
+	//printf("Waiting power button input...\n");
+	//smc_wait_events(SMC_POWER_BUTTON);
 
 	irq_shutdown();
 	if (!vector)
